@@ -1,0 +1,240 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 896px) {
+  .technology {
+    text-align: center;
+  }
+  /* 背景 */
+  .video-m {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+  }
+  .technology h2 {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: Futura, "Noto Sans JP";
+  }
+  .technology p {
+    font-family:'メイリオ', 'Meiryo', sans-serif;
+    margin: 0;
+  }
+  .container {
+    width: 72%;
+    margin: 0 auto;
+  }
+  /* SIMULATION */
+  .simulation {
+    background-color: white;
+    position: relative;
+    padding-bottom: 200px;
+  }
+  .simulation::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    border-width: 0 0 80px 100vw;
+  }
+  .title1 {
+    padding-top: 100px;
+    font: Medium var(--unnamed-font-size-23)/var(--unnamed-line-spacing-31) var(--unnamed-font-family-futura);
+    color: var(--unnamed-color-222222);
+    text-align: center;
+    font: Medium 23px/31px Futura;
+    letter-spacing: 2.3px;
+    color: #222222;
+    opacity: 1;
+  }
+  .text-si {
+    font: Regular var(--unnamed-font-size-18)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-noto-sans-jp);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-222222);
+    text-align: center;
+    font: Regular 18px/27px Noto Sans JP;
+    letter-spacing: 1.3px;
+    color: #222222;
+    opacity: 1;
+    font-size: 13px;
+  }
+  .text-sim {
+    padding-top: 60px;
+    width: 100%;
+    font: Regular var(--unnamed-font-size-18)/var(--unnamed-line-spacing-30) var(--unnamed-font-family-noto-sans-jp);
+    color: var(--unnamed-color-222222);
+    text-align: left;
+    font: Regular 18px/30px Noto Sans JP;
+    letter-spacing: 2.8px;
+    color: #222222;
+    opacity: 1;
+    font-size: 14px;
+  }
+  .row {
+    padding-top: 39px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .box-m {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 36px;
+    margin-left: -25px;
+    font-size: 17px;
+    top: 4133px;
+    left: 22px;
+    width: 320px;
+    height: 300px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DDDDDD;
+    opacity: 1;
+  }
+  .botan1 {
+    padding-top: 50px;
+  }
+  /* contactus */
+  .contact {
+    background-color: #1B6689;
+    position: relative;
+    padding-bottom: 114px;
+  }
+  .contact::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent red green #1B6689;
+    border-width: 80px 0px 0px 100vw;
+  }
+  .title {
+    padding-top: 50px;
+    font: Medium 33px/44px var(--unnamed-font-family-futura);
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: Medium 33px/44px Futura;
+    letter-spacing: 3.3px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+  .text-us {
+    padding-top: 6px;
+    font: Regular var(--unnamed-font-size-18)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-noto-sans-jp);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: Regular 18px/27px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 15px;
+  }
+  .text-us2 {
+    padding-top: 30px;
+    font: Regular var(--unnamed-font-size-18)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-noto-sans-jp);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: Regular 18px/27px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 14px;
+  }
+  .botan {
+    padding-top: 40px;
+  }
+  .bt {
+    color: white;
+    padding: 15px 70px;
+    background: #F7B107 0% 0% no-repeat padding-box;
+    border-radius: 18px;
+    opacity: 1;
+    border: #F7B107;
+  }
+  /* br非表示 */
+  .ps-br {
+    display: none;
+    /* PCの改行を隠して */
+  }
+  .sp-br {
+    display: block;
+    /* SPを改行する */
+  }
+  /* 帯 */
+  section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  section:nth-child(even) {
+    background: #f2f2f2;
+  }
+  section h3 {
+    font-size: 40px;
+    padding: 10px;
+  }
+  .motion-txt {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .motion-txt:after {
+    content: '';
+    position: absolute;
+    opacity: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    transform: translate3d(-101%, 0, 0);
+  }
+  .js-scroll.show .motion-txt:after {
+    transition-property: transform, opacity;
+    transition-duration: 1.5s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  .js-scroll.done .motion-txt:after {
+    transition-property: transform;
+    transition-duration: 1.5s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translate3d(103%, 0, 0);
+  }
+  .motion-txt .motion-inner {
+    display: inline-block;
+    opacity: 0;
+  }
+  .js-scroll.done .motion-txt .motion-inner {
+    opacity: 1;
+  }
+}
